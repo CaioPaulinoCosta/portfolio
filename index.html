@@ -10,73 +10,218 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand position-fixed">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-2" href="#">
+        <img src="img/programador.png"> <span>Conecta Smart</span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto me-2 d-flex gap-3 circleBehind">
+          <a aria-current="page" href="#">Sobre</a>
+          <a href="#">Serviços</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </div>
+  </nav>
     <div class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand ms-2" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto me-2 d-flex gap-3">
-                  <a class="nav-link" aria-current="page" href="#">Sobre</a>
-                  <a class="nav-link" href="#">Portfólio</a>
-                  <a class="nav-link" href="#">Contato</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="welcome">
+          <div class="welcome d-flex align-items-center">
             <div class="container">
                 <div class="welcome-title d-flex justify-content-center">
-                    <h1 id="typed-title">Olá, bem-vindo à Conecta Smart!</h1>
-                  </div>
-                  <div class="w-75">
-                    <p id="typed-description">Somos especialistas na criação de aplicações web inovadoras, personalizadas e de alto desempenho. Transformamos ideias em soluções digitais eficientes, combinando tecnologia, design e funcionalidade para levar sua marca ao próximo nível. Seja um site, sistema ou plataforma, desenvolvemos com qualidade, segurança e escalabilidade.</p>
-                  </div>
+                    <h1 id="typing-title"></h1>
+                </div>
+                <div class="w-75">
+                    <p id="typing-text"></p>
+                </div>
             </div>
-          </div>          
+        </div>              
     </div>
     <div>
-        <main>
-        </main>
+      <main>
+        <div class="about-us">
+            <div class="about-us-content">
+                <!-- Aqui você pode adicionar textos, botões ou outros elementos à esquerda -->
+                <h2 data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">Sobre Nós</h2>
+                <div data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="1500" style="border-bottom: solid 3px #4f969a; width: 60%;"></div>
+                <p data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500">A <span class="cyan">Conecta Smart</span> nasceu com o propósito de transformar ideias em soluções digitais inovadoras. Somos uma empresa especializada em design e criação de sites, desenvolvimento de aplicações web, manutenção e otimização e segurança e proteção de dados. Combinamos criatividade, tecnologia e estratégia para oferecer serviços que impulsionam negócios no ambiente digital. Nosso time de especialistas trabalha com as melhores práticas do mercado, garantindo projetos modernos, funcionais e seguros. Seja para criar uma identidade digital forte, desenvolver soluções personalizadas ou otimizar sua presença online, a <span class="cyan">Conecta Smart</span> está aqui para conectar seu negócio ao futuro.</p>
+            </div>
+            <div class="about-us-images">
+              <img src="img/about/floor.svg" alt="about-us-image" data-aos="fade-up" data-aos-duration="3000" >
+              <img src="img/about/plants.svg" alt="about-us-image" data-aos="fade-right" data-aos-duration="3000" >
+              <img src="img/about/shadows.svg" alt="about-us-image" class="floating" >
+              <img src="img/about/window.svg" alt="about-us-image" data-aos="fade-down" data-aos-duration="3000" >
+              <img src="img/about/character1.svg" alt="about-us-image" class="floating">
+              <img src="img/about/character2.svg" alt="about-us-image" class="floating">
+              <img src="img/about/character3.svg" alt="about-us-image" class="floating">
+          </div>          
+        </div>
+    </main>
+    <section class="we-offer-area text-center bg-gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="site-heading text-center">
+                      <h2>Nossos <span>Serviços</span></h2>
+                      <h4>Na Conecta Smart, transformamos ideias em soluções digitais inovadoras. Oferecemos um conjunto completo de serviços para impulsionar sua presença online com tecnologia, design e segurança</h4>
+                  </div>
+              </div>
+          </div>
+              <div class="row our-offer-items less-carousel">
+                  <!-- Single Item -->
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                        <i class="fa-solid fa-pencil"></i>
+                          <h4>Design e Criação de Sites</h4>
+                          <p>
+                            Desenvolvemos interfaces modernas, responsivas e intuitivas para garantir a melhor experiência ao usuário. 
+                          </p>
+                      </div>
+                  </div>
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                        <i class="fa-solid fa-code"></i>
+                          <h4>Desenvolvimento de Aplicações Web</h4>
+                          <p>
+                            Criamos sistemas personalizados, escaláveis e de alto desempenho para atender às suas necessidades
+                          </p>
+                      </div>
+                  </div>
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                        <i class="fa-solid fa-gear"></i>
+                          <h4>Manutenção e Otimização</h4>
+                          <p>
+                            Melhoramos a performance, acessibilidade e usabilidade do seu site ou aplicação para garantir eficiência máxima. 
+                          </p>
+                      </div>
+                  </div>
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                          <h4>Segurança e Proteção de Dados</h4>
+                          <p>
+                            Implementamos soluções robustas para manter seus dados protegidos contra ameaças digitais.
+                          </p>
+                      </div>
+                  </div>
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <i class="fas fa-recycle"></i>
+                          <h4>Web Page Update</h4>
+                          <p>
+                            Mantemos seu site sempre atualizado, com novos conteúdos, melhorias e correções para garantir um funcionamento impecável. 
+                          </p>
+                      </div>
+                  </div>
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <div class="col-md-4 col-sm-6 equal-height">
+                      <div class="item">
+                          <i class="fas fa-headset"></i>
+                          <h4>24/7 Support</h4>
+                          <p>
+                            Nossa equipe está sempre disponível para oferecer suporte técnico contínuo e resolver qualquer problema rapidamente. 
+                          </p>
+                      </div>
+                  </div>
+                  <!-- End Single Item -->
+              </div>
+      </div>
+  </section>    
     </div>
+    <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="footer">
+
+  <!--Content before waves-->
+  <div class="inner-footer flex d-flex gap-5">
+  <!--Just the logo.. Don't mind this-->
+  <h1><i class="fa-brands fa-github"></i></h1>
+  <h1><i class="fa-brands fa-linkedin"></i></h1>
+  <h1><i class="fa-brands fa-instagram"></i></h1>
+  <h1><i class="fa-solid fa-envelope"></i></h1>
+  </div>
+  
+  <!--Waves Container-->
+  <div>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+  </defs>
+  <g class="parallax">
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+  </g>
+  </svg>
+  </div>
+  <!--Waves end-->
+  
+  </div>
+  <!--Header ends-->
+  
+  <!--Content starts-->
+  <div class="content flex">
+    <p>&copy; 2025 Conecta Smart. Todos os direitos reservados.</p>
+  </div>
+  <!--Content ends-->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
   </script>
-  <script>
-    // Animação de digitação no título
-    var optionsTitle = {
-      strings: ["Olá, bem-vindo à Conecta Smart!"],
-      typeSpeed: 80,          // Velocidade de digitação
-      backSpeed: 50,          // Velocidade de correção
-      backDelay: 1000,        // Tempo antes de começar a corrigir (se necessário)
-      startDelay: 500,        // Tempo até começar a digitar
-      showCursor: true,       // Ativa o cursor de digitação
-      loop: false,            // Não vai repetir a animação
-      onComplete: function() { // Após concluir a animação, o texto fica fixo
-        document.getElementById('typed-title').style.opacity = "1"; // Faz o título permanecer visível
+    <script>
+      function typeWriter(element, text, speed, callback) {
+          let i = 0;
+          element.style.opacity = 1;
+
+          function typing() {
+              if (i <= text.length) {
+                  element.textContent = text.substring(0, i); // Usa textContent para evitar bugs com HTML
+                  i++;
+                  setTimeout(typing, speed);
+              } else {
+                  if (callback) setTimeout(callback, 500);
+              }
+          }
+
+          typing();
       }
-    };
-    var typedTitle = new Typed("#typed-title", optionsTitle);
-  
-    // Animação de digitação na descrição
-    var optionsDescription = {
-      strings: ["Somos especialistas na criação de aplicações web inovadoras, personalizadas e de alto desempenho. Transformamos ideias em soluções digitais eficientes, combinando tecnologia, design e funcionalidade para levar sua marca ao próximo nível. Seja um site, sistema ou plataforma, desenvolvemos com qualidade, segurança e escalabilidade."],
-      typeSpeed: 50,          // Velocidade de digitação
-      backSpeed: 30,          // Velocidade de correção
-      backDelay: 1500,        // Tempo antes de começar a corrigir (se necessário)
-      startDelay: 1000,       // Tempo até começar a digitar
-      showCursor: true,       // Ativa o cursor de digitação
-      loop: false,            // Não vai repetir a animação
-      onComplete: function() { // Após concluir a animação, o texto fica fixo
-        document.getElementById('typed-description').style.opacity = "1"; // Faz a descrição ficar visível
-      }
-    };
-    var typedDescription = new Typed("#typed-description", optionsDescription);
+
+      document.addEventListener("DOMContentLoaded", function () {
+          const titleElement = document.getElementById("typing-title");
+          const textElement = document.getElementById("typing-text");
+
+          const titleText = "Olá, bem-vindo à Conecta Smart!";
+          const descriptionText = "Somos especialistas na criação de aplicações web inovadoras, personalizadas e de alto desempenho. Transformamos ideias em soluções digitais eficientes, combinando tecnologia, design e funcionalidade para levar sua marca ao próximo nível. Seja um site, sistema ou plataforma, desenvolvemos com qualidade, segurança e escalabilidade.";
+
+          typeWriter(titleElement, titleText, 70, function () {
+              typeWriter(textElement, descriptionText, 30);
+          });
+      });
   </script>
-  
+<script src="https://kit.fontawesome.com/82e2262ecf.js" crossorigin="anonymous"></script>
 </html>
